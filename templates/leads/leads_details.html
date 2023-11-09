@@ -1,0 +1,11 @@
+{% extends 'leads/layout.html' %}
+{% block body %}
+    <a href="/leads/all/">All Leads</a>
+    <hr/>
+    <h1>those are the details of {{ the_lead.first_name }} {{ the_lead.last_name }}</h1>
+    <p class="lead">First Name: {{the_lead.first_name}}</p>
+    <p class="lead">last Name: {{the_lead.last_name}}</p>
+    <p class="lead">Age: {{ the_lead.age }}</p>
+    <p class="lead">Agent: {{ the_lead.agent }}</p>
+  
+{% endblock %}

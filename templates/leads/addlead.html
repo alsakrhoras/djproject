@@ -1,0 +1,12 @@
+{% extends 'leads/layout.html' %}
+
+{% block body %}
+    <div class="addlead">
+        <form method="post">
+            {% csrf_token %}
+            {{ add_lead_form.as_p }}
+            <button id="add" type="submit">Add</button>
+        </form>
+    </div>
+
+{% endblock %}

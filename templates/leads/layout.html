@@ -1,8 +1,9 @@
-{% load static %}
-
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Leads{% endblock %}</title>
     <link
       rel="stylesheet"
@@ -12,6 +13,7 @@
     />
     <link href="{% static 'leads/styles.css' %}" rel="stylesheet" />
   </head>
+
   <body>
     {% block body %} {% endblock %}
   </body>
